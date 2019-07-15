@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![CircleCI](https://circleci.com/gh/Phunmbi/Random-Number-Generator.svg?style=svg)](https://circleci.com/gh/Phunmbi/Random-Number-Generator)  [![Maintainability](https://api.codeclimate.com/v1/badges/6629daadea677d753e9c/maintainability)](https://codeclimate.com/github/Phunmbi/Random-Number-Generator/maintainability)  [![Test Coverage](https://api.codeclimate.com/v1/badges/6629daadea677d753e9c/test_coverage)](https://codeclimate.com/github/Phunmbi/Random-Number-Generator/test_coverage)
+
 ## Available Scripts
 
 In the project directory, you can run:

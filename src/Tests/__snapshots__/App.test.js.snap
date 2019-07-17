@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take screenshot successfully 1`] = `
+<App>
+  <div
+    className="App"
+  >
+    <BrowserRouter>
+      <Router
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+      >
+        <Routes>
+          <Switch>
+            <Route
+              component={[Function]}
+              computedMatch={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              exact={true}
+              location={
+                Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              path="/"
+            >
+              <IndexView
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                location={
+                  Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+              >
+                <div
+                  className="generator"
+                >
+                  <div
+                    className="generator-title"
+                  >
+                    <h2>
+                      Random Number Generator
+                    </h2>
+                  </div>
+                  <form
+                    onSubmit={[Function]}
+                  >
+                    <input
+                      placeholder="How many numbers would you like to generate?"
+                      type="text"
+                    />
+                    <div
+                      className="generator-actions"
+                    >
+                      <input
+                        type="submit"
+                        value="Generate Numbers"
+                      />
+                      <div
+                        className="generator-actions__download"
+                      >
+                        <img
+                          alt="Load from file"
+                          src="Download.svg"
+                        />
+                        <p>
+                          Load from File
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </IndexView>
+            </Route>
+          </Switch>
+        </Routes>
+      </Router>
+    </BrowserRouter>
+  </div>
+</App>
+`;

@@ -18,8 +18,10 @@
   &-wrapper{
     display: flex;
     width: 80vw;
+    height: 65%;
     flex-basis: auto;
     flex-wrap: wrap;
+    overflow: scroll;
   }
 
   &-single-number{
@@ -27,7 +29,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 25px;
-    width: 80px;
+    width: 95px;
     height: 30px;
     border: 1px solid #c6b75d;
     font-size: 17px;
@@ -36,20 +38,21 @@
 
   &-actions{
     position: fixed;
-    bottom: 60px;
+    bottom: 50px;
     display: flex;
-    width: 260px;
+    width: 300px;
     justify-content: space-between;
     align-items: center;
     div{
       cursor: pointer;
+      color: black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       padding: 5px;
       align-items: center;
-      width: 140px;
+      width: 150px;
       height: 30px;
-      font-size: 19px;
+      font-size: 17px;
       font-weight: bold;
       background-color: #c6b75d;
       border-radius: 5px;
@@ -58,7 +61,42 @@
       }
     }
     div:first-child{
-      width: 80px;
+      width: 110px;
+    }
+  }
+
+  &-sort {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &__ascending, &__descending {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 40px;
+      height: 40px;
+      font-size: 17px;
+      font-weight: bold;
+      background-color: #c6b75d;
+      border-radius: 5px;
+      cursor: pointer;
+      color: black;
+    }
+
+    &__Total {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 200px;
+      p{
+        text-align: center;
+        width: 40px;
+        height: 20px;
+        border: 1px solid #c6b75d;
+      }
     }
   }
 }

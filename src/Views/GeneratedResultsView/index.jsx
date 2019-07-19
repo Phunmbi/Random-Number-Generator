@@ -1,13 +1,38 @@
 import React, {Component} from 'react';
+import { generateNumbers, saveToFile, sortAscending, sortDescending } from '../../Helpers/GeneratorLogic';
 import Home from './Images/Home.svg';
 import Upload from './Images/Upload.svg';
+import Ascending from './Images/Ascending.svg';
+import Descending from './Images/Descending.svg';
 import './GeneratedResults.scss';
 
 class GeneratedResults extends Component {
+  state = {
+    numbers: []
+  };
+
+  componentDidMount() {
+    this.setState({
+      numbers: generateNumbers(Number(this.props.location.search.slice(1, this.props.location.search.length)))
+    })
+  }
+
   SingleGeneratedNumber = (int) => {
     return (
-      <p className="results-single-number">{int}</p>
+      <p key={int} className="results-single-number">{int}</p>
     )
+  };
+
+  handleAscendingSort = () => {
+    this.setState({
+      numbers: sortAscending(this.state.numbers)
+    })
+  };
+
+  handleDescendingSort = () => {
+    this.setState({
+      numbers: sortDescending(this.state.numbers)
+    })
   };
 
   render() {
@@ -17,24 +42,25 @@ class GeneratedResults extends Component {
           <h2>Generated Numbers</h2>
         </div>
 
+        <div className="results-sort">
+          <div onClick={() => this.handleAscendingSort()} className="results-sort__ascending">
+            <img src={Ascending} alt="Ascending" />
+          </div>
+          <div onClick={() => this.handleDescendingSort()} className="results-sort__descending">
+            <img src={Descending} alt="Descending" />
+          </div>
+          <div className="results-sort__Total">
+            <h3>Total numbers:</h3>
+            <p>{this.state.numbers.length}</p>
+          </div>
+        </div>
+
         <div className="results-wrapper">
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
-          {this.SingleGeneratedNumber(78433222)}
+          {
+            this.state.numbers.map((each) => {
+              return this.SingleGeneratedNumber(each);
+            })
+          }
         </div>
 
         <div className="results-actions">
@@ -42,7 +68,7 @@ class GeneratedResults extends Component {
             <img src={Home} alt="Home"/>
             <p>Home</p>
           </div>
-          <div>
+          <div onClick={() => saveToFile(this.state.numbers)}>
             <img src={Upload} alt="Save Numbers" />
             <p>Save Numbers</p>
           </div>

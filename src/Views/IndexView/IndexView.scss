@@ -23,7 +23,7 @@
     align-content: space-between;
     margin: 0 auto;
     height: 150px;
-    @media only screen and (max-width: 700px) {
+    @media (max-width: 700px) {
       width: 300px;
     }
     input{
@@ -35,8 +35,8 @@
       font-size: 17px;
       font-weight: bold;
       outline: none;
-      @media only screen and (max-width: 700px) {
-        font-size: 11px;
+      @media (max-width: 700px) {
+        font-size: 15px;
       }
     }
 
@@ -50,18 +50,27 @@
         cursor: pointer;
         width: 160px;
         text-align: center;
+        color: #000;
+        font-size: 17px;
+        font-weight: bold;
+        @media (max-width: 700px) {
+          font-size: 15px;
+          width: 140px;
+        }
       }
 
       &__download {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         width: 160px;
         color: #000;
-        font-size: 17px;
         font-weight: bold;
         height: 40px;
         border-radius: 5px;
+        @media (max-width: 700px) {
+          width: 140px;
+        }
       }
     }
   }

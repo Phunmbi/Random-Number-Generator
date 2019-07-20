@@ -35,34 +35,34 @@ class GeneratedResults extends Component {
     })
   };
 
+  renderSorting = () => {
+    return (
+      <div className="results-sort">
+        <div onClick={() => this.handleAscendingSort()} className="results-sort__ascending">
+          <img src={Ascending} alt="Ascending" />
+        </div>
+        <div onClick={() => this.handleDescendingSort()} className="results-sort__descending">
+          <img src={Descending} alt="Descending" />
+        </div>
+        <div className="results-sort__Total">
+          <h3>Total numbers:</h3>
+          <p>{this.state.numbers.length}</p>
+        </div>
+      </div>
+    )
+  };
+
   render() {
     return (
       <div className="results">
         <div className="results-title">
           <h2>Generated Numbers</h2>
         </div>
-
-        <div className="results-sort">
-          <div onClick={() => this.handleAscendingSort()} className="results-sort__ascending">
-            <img src={Ascending} alt="Ascending" />
-          </div>
-          <div onClick={() => this.handleDescendingSort()} className="results-sort__descending">
-            <img src={Descending} alt="Descending" />
-          </div>
-          <div className="results-sort__Total">
-            <h3>Total numbers:</h3>
-            <p>{this.state.numbers.length}</p>
-          </div>
-        </div>
-
+        {this.renderSorting()}
         <div className="results-wrapper">
-          {
-            this.state.numbers.map((each) => {
-              return this.SingleGeneratedNumber(each);
-            })
-          }
+          {this.state.numbers.map((each) => {
+            return this.SingleGeneratedNumber(each);})}
         </div>
-
         <div className="results-actions">
           <div onClick={() => this.props.history.push('/')} >
             <img src={Home} alt="Home"/>

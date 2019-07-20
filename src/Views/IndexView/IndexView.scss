@@ -48,14 +48,14 @@
         text-indent: 0;
         background-color: #c6b75d;
         cursor: pointer;
-        width: 160px;
+        width: 100%;
         text-align: center;
         color: #000;
         font-size: 17px;
         font-weight: bold;
         @media (max-width: 700px) {
           font-size: 15px;
-          width: 140px;
+          width: 100%;
         }
       }
 

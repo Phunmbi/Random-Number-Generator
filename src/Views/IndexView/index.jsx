@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Download from './Images/Download.svg';
 import './IndexView.scss';
 
 class IndexView extends Component {
@@ -29,16 +28,12 @@ class IndexView extends Component {
             type="text"
             value={this.state.amountToGenerate}
             onChange={(e) => this.handleChange(e)}
+            className="generator-input"
             placeholder="How many numbers would you like to generate?"/>
           <div className="generator-actions">
             <input type="submit" value="Generate Numbers"/>
-            <div  className="generator-actions__download">
-              <img src={Download} alt="Load from file"/>
-              <p>Load from File</p>
-            </div>
           </div>
         </form>
-        {/*<hr/>*/}
       </div>
     );
   }

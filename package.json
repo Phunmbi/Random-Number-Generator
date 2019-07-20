@@ -17,19 +17,20 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test -u",
-    "test:coverage": "react-scripts test --coverage",
+    "test:coverage": "react-scripts test -u --coverage",
     "eject": "react-scripts eject"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/**/*.{js,jsx}"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
     "coverageReporters": [
       "lcov",
-      "text"
+      "text",
+      "html"
     ]
   },
   "eslintConfig": {

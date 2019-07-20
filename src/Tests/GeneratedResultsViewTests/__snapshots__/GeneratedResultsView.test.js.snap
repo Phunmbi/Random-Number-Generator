@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take screenshot successfully 1`] = `
+<MemoryRouter
+  initialEntries={
+    Array [
+      Object {
+        "key": "testkey",
+      },
+    ]
+  }
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "testkey",
+            "pathname": "/",
+            "search": "",
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "testkey",
+          "pathname": "/",
+          "search": "",
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <GeneratedResults
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
+      location={
+        Object {
+          "search": "?10",
+        }
+      }
+    >
+      <div
+        className="results"
+      >
+        <div
+          className="results-title"
+        >
+          <h2>
+            Generated Numbers
+          </h2>
+        </div>
+        <div
+          className="results-sort"
+        >
+          <div
+            className="results-sort__ascending"
+            onClick={[Function]}
+          >
+            <img
+              alt="Ascending"
+              src="Ascending.svg"
+            />
+          </div>
+          <div
+            className="results-sort__descending"
+            onClick={[Function]}
+          >
+            <img
+              alt="Descending"
+              src="Descending.svg"
+            />
+          </div>
+          <div
+            className="results-sort__Total"
+          >
+            <h3>
+              Total numbers:
+            </h3>
+            <p>
+              10
+            </p>
+          </div>
+        </div>
+        <div
+          className="results-wrapper"
+        >
+          <p
+            className="results-single-number"
+            key="0946060116"
+          >
+            0946060116
+          </p>
+          <p
+            className="results-single-number"
+            key="0138374942"
+          >
+            0138374942
+          </p>
+          <p
+            className="results-single-number"
+            key="088181481"
+          >
+            088181481
+          </p>
+          <p
+            className="results-single-number"
+            key="0181661103"
+          >
+            0181661103
+          </p>
+          <p
+            className="results-single-number"
+            key="0469817203"
+          >
+            0469817203
+          </p>
+          <p
+            className="results-single-number"
+            key="0331180321"
+          >
+            0331180321
+          </p>
+          <p
+            className="results-single-number"
+            key="0888615002"
+          >
+            0888615002
+          </p>
+          <p
+            className="results-single-number"
+            key="0623771735"
+          >
+            0623771735
+          </p>
+          <p
+            className="results-single-number"
+            key="0715022566"
+          >
+            0715022566
+          </p>
+          <p
+            className="results-single-number"
+            key="0985084557"
+          >
+            0985084557
+          </p>
+        </div>
+        <div
+          className="results-actions"
+        >
+          <div
+            onClick={[Function]}
+          >
+            <img
+              alt="Home"
+              src="Home.svg"
+            />
+            <p>
+              Home
+            </p>
+          </div>
+          <div
+            onClick={[Function]}
+          >
+            <img
+              alt="Save Numbers"
+              src="Upload.svg"
+            />
+            <p>
+              Save Numbers
+            </p>
+          </div>
+        </div>
+      </div>
+    </GeneratedResults>
+  </Router>
+</MemoryRouter>
+`;

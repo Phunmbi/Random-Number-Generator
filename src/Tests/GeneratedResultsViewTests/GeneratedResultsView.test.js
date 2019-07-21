@@ -36,11 +36,6 @@ it('should simulate sort by descending', () => {
 });
 
 it('should simulate home redirect', () => {
-  wrapped.find('.results-actions').find('div').at(0).simulate('click');
-  expect(wrapped.find('GeneratedResultsView').exists()).toEqual(false);
-});
-
-it('should simulate file upload', () => {
-  wrapped.find('.results-actions').find('div').at(1).simulate('click');
+  wrapped.find('.results-actions').find('.results-actions__redirect').simulate('click');
   expect(wrapped.find('GeneratedResultsView').exists()).toEqual(false);
 });

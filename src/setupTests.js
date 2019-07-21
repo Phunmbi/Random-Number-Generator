@@ -1,4 +1,4 @@
-import { configure, shallow, render, mount } from 'enzyme/build';
+import { configure, shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16/build';
 
 configure({ adapter: new Adapter() });

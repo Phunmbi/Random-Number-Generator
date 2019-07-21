@@ -107,7 +107,7 @@ exports[`should take screenshot successfully 1`] = `
                       onChange={[Function]}
                       placeholder="How many numbers would you like to generate?"
                       type="text"
-                      value={0}
+                      value={1000}
                     />
                     <div
                       className="generator-actions"

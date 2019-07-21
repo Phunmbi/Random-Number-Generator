@@ -75,6 +75,9 @@ exports[`should take screenshot successfully 1`] = `
               alt="Ascending"
               src="Ascending.svg"
             />
+            <p>
+              Sort Ascending
+            </p>
           </div>
           <div
             className="results-sort__descending"
@@ -84,6 +87,9 @@ exports[`should take screenshot successfully 1`] = `
               alt="Descending"
               src="Descending.svg"
             />
+            <p>
+              Sort Descending
+            </p>
           </div>
           <div
             className="results-sort__Total"
@@ -93,6 +99,26 @@ exports[`should take screenshot successfully 1`] = `
             </h3>
             <p>
               10
+            </p>
+          </div>
+          <div
+            className="results-sort__Min"
+          >
+            <h3>
+              Minimum Number:
+            </h3>
+            <p>
+              0128225234
+            </p>
+          </div>
+          <div
+            className="results-sort__Maxa"
+          >
+            <h3>
+              Maximum Number:
+            </h3>
+            <p>
+              0915417426
             </p>
           </div>
         </div>
@@ -106,7 +132,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0450623375
+              0128225234
             </p>
           </div>
           <div
@@ -116,7 +142,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0295629542
+              0197359795
             </p>
           </div>
           <div
@@ -126,7 +152,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0922075613
+              0224627479
             </p>
           </div>
           <div
@@ -136,7 +162,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0934633829
+              0336851176
             </p>
           </div>
           <div
@@ -146,7 +172,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0947788968
+              0520682485
             </p>
           </div>
           <div
@@ -156,7 +182,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0905144531
+              0691708939
             </p>
           </div>
           <div
@@ -166,7 +192,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0229578931
+              0702670157
             </p>
           </div>
           <div
@@ -176,7 +202,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0587955594
+              0809795710
             </p>
           </div>
           <div
@@ -186,7 +212,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0169540713
+              0885478393
             </p>
           </div>
           <div
@@ -196,7 +222,7 @@ exports[`should take screenshot successfully 1`] = `
             <p
               className="results-single-number"
             >
-              0648681800
+              0915417426
             </p>
           </div>
         </div>

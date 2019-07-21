@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take screenshot successfully 1`] = `
+<MemoryRouter
+  initialEntries={
+    Array [
+      Object {
+        "key": "testkey",
+      },
+    ]
+  }
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "testkey",
+            "pathname": "/",
+            "search": "",
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "testkey",
+          "pathname": "/",
+          "search": "",
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <GeneratedResults
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
+      location={
+        Object {
+          "search": "?10",
+        }
+      }
+    >
+      <div
+        className="results"
+      >
+        <div
+          className="results-title"
+        >
+          <h2>
+            Generated Numbers
+          </h2>
+        </div>
+        <div
+          className="results-sort"
+        >
+          <div
+            className="results-sort__ascending"
+            onClick={[Function]}
+          >
+            <img
+              alt="Ascending"
+              src="Ascending.svg"
+            />
+            <p>
+              Sort Ascending
+            </p>
+          </div>
+          <div
+            className="results-sort__descending"
+            onClick={[Function]}
+          >
+            <img
+              alt="Descending"
+              src="Descending.svg"
+            />
+            <p>
+              Sort Descending
+            </p>
+          </div>
+          <div
+            className="results-sort__Total"
+          >
+            <h3>
+              Total numbers:
+            </h3>
+            <p>
+              10
+            </p>
+          </div>
+          <div
+            className="results-sort__Min"
+          >
+            <h3>
+              Minimum Number:
+            </h3>
+            <p>
+              0128225234
+            </p>
+          </div>
+          <div
+            className="results-sort__Maxa"
+          >
+            <h3>
+              Maximum Number:
+            </h3>
+            <p>
+              0915417426
+            </p>
+          </div>
+        </div>
+        <div
+          className="results-wrapper"
+        >
+          <div
+            key="0"
+          >
+            1
+            <p
+              className="results-single-number"
+            >
+              0128225234
+            </p>
+          </div>
+          <div
+            key="1"
+          >
+            2
+            <p
+              className="results-single-number"
+            >
+              0197359795
+            </p>
+          </div>
+          <div
+            key="2"
+          >
+            3
+            <p
+              className="results-single-number"
+            >
+              0224627479
+            </p>
+          </div>
+          <div
+            key="3"
+          >
+            4
+            <p
+              className="results-single-number"
+            >
+              0336851176
+            </p>
+          </div>
+          <div
+            key="4"
+          >
+            5
+            <p
+              className="results-single-number"
+            >
+              0520682485
+            </p>
+          </div>
+          <div
+            key="5"
+          >
+            6
+            <p
+              className="results-single-number"
+            >
+              0691708939
+            </p>
+          </div>
+          <div
+            key="6"
+          >
+            7
+            <p
+              className="results-single-number"
+            >
+              0702670157
+            </p>
+          </div>
+          <div
+            key="7"
+          >
+            8
+            <p
+              className="results-single-number"
+            >
+              0809795710
+            </p>
+          </div>
+          <div
+            key="8"
+          >
+            9
+            <p
+              className="results-single-number"
+            >
+              0885478393
+            </p>
+          </div>
+          <div
+            key="9"
+          >
+            10
+            <p
+              className="results-single-number"
+            >
+              0915417426
+            </p>
+          </div>
+        </div>
+        <div
+          className="results-actions"
+        >
+          <div
+            className="results-actions__redirect"
+            onClick={[Function]}
+          >
+            <img
+              alt="Home"
+              src="Home.svg"
+            />
+            <p>
+              Home
+            </p>
+          </div>
+          <div
+            className="results-actions__upload"
+            onClick={[Function]}
+          >
+            <img
+              alt="Save Numbers"
+              src="Upload.svg"
+            />
+            <p>
+              Save Numbers
+            </p>
+          </div>
+        </div>
+      </div>
+    </GeneratedResults>
+  </Router>
+</MemoryRouter>
+`;

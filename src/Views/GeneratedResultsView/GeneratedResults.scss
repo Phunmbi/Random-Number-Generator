@@ -1,0 +1,131 @@
+.results {
+  display: flex;
+  height: 98vh;
+  flex-direction: column;
+  align-items: center;
+
+  &-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Hanalei', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    @media only screen and (max-width: 700px) {
+      font-size: 18px;
+    }
+  }
+
+  &-wrapper{
+    display: flex;
+    width: 80vw;
+    height: 65%;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    overflow: scroll;
+    margin-left: 10px;
+    @media only screen and (max-width: 700px) {
+      height: 50%;
+    }
+  }
+
+  &-single-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    width: 95px;
+    height: 30px;
+    border: 1px solid #c6b75d;
+    font-size: 17px;
+    font-weight: bold;
+    @media only screen and (max-width: 700px) {
+      width: 75px;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+  }
+
+  &-actions{
+    position: fixed;
+    bottom: 50px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    div{
+      cursor: pointer;
+      color: black;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 5px;
+      align-items: center;
+      width: 150px;
+      height: 30px;
+      font-size: 17px;
+      font-weight: bold;
+      background-color: #c6b75d;
+      border-radius: 5px;
+      p {
+        margin-top: 15px;
+      }
+    }
+    div:first-child{
+      width: 110px;
+    }
+  }
+
+  &-sort {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 1100px) {
+      flex-direction: column;
+      h3, p{
+        margin: 0;
+      }
+    }
+
+    &__ascending, &__descending {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 160px;
+      height: 40px;
+      margin-bottom: 5px;
+      font-size: 17px;
+      font-weight: bold;
+      background-color: #c6b75d;
+      border-radius: 5px;
+      cursor: pointer;
+      color: black;
+    }
+
+    &__Total, &__Min, &__Max {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 200px;
+      p{
+        text-align: center;
+        width: 40px;
+        height: 20px;
+        border: 1px solid #c6b75d;
+        color: black;
+        font-weight: bold;
+      }
+    }
+
+    &__Min, &__Max {
+      width: 240px;
+      height: 40px;
+      p{
+        width: 100px;
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+}

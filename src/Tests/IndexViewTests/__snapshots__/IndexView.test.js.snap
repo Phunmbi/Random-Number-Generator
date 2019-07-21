@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take screenshot successfully 1`] = `
+<IndexView
+  history={
+    Object {
+      "push": [MockFunction],
+    }
+  }
+>
+  <div
+    className="generator"
+  >
+    <div
+      className="generator-title"
+    >
+      <h2>
+        Random Number Generator
+      </h2>
+    </div>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="generator-input"
+        onChange={[Function]}
+        placeholder="How many numbers would you like to generate?"
+        type="text"
+        value={1000}
+      />
+      <div
+        className="generator-actions"
+      >
+        <input
+          type="submit"
+          value="Generate Numbers"
+        />
+      </div>
+    </form>
+  </div>
+</IndexView>
+`;

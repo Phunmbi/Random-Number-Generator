@@ -1,0 +1,21 @@
+.NotFound {
+  text-align: center;
+
+  &-header {
+    background-color: #282c34;
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    h2 {
+      margin-top: -100px;
+    }
+    p > a {
+      color: #c6b75d;
+      text-decoration: none;
+    }
+  }
+}

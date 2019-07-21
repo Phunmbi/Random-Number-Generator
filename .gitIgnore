@@ -1,0 +1,36 @@
+# dependency directory
+node_modules
+/.pnp
+.pnp.js
+
+# compiled directory
+dist
+/build
+
+# environment variables
+.env
+
+# vscode directory
+.vscode
+
+#coverage report
+/coverage
+.DS_Store
+
+# logs
+npm-debug.log
+logs
+package-lock.json
+yarn-error.log
+yarn-debug.log*
+
+# Webstorm settings files
+.idea/
+.db
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

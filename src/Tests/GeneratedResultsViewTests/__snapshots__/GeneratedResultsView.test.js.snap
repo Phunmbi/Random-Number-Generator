@@ -99,71 +99,112 @@ exports[`should take screenshot successfully 1`] = `
         <div
           className="results-wrapper"
         >
-          <p
-            className="results-single-number"
-            key="0946060116"
+          <div
+            key="0"
           >
-            0946060116
-          </p>
-          <p
-            className="results-single-number"
-            key="0138374942"
+            1
+            <p
+              className="results-single-number"
+            >
+              0450623375
+            </p>
+          </div>
+          <div
+            key="1"
           >
-            0138374942
-          </p>
-          <p
-            className="results-single-number"
-            key="088181481"
+            2
+            <p
+              className="results-single-number"
+            >
+              0295629542
+            </p>
+          </div>
+          <div
+            key="2"
           >
-            088181481
-          </p>
-          <p
-            className="results-single-number"
-            key="0181661103"
+            3
+            <p
+              className="results-single-number"
+            >
+              0922075613
+            </p>
+          </div>
+          <div
+            key="3"
           >
-            0181661103
-          </p>
-          <p
-            className="results-single-number"
-            key="0469817203"
+            4
+            <p
+              className="results-single-number"
+            >
+              0934633829
+            </p>
+          </div>
+          <div
+            key="4"
           >
-            0469817203
-          </p>
-          <p
-            className="results-single-number"
-            key="0331180321"
+            5
+            <p
+              className="results-single-number"
+            >
+              0947788968
+            </p>
+          </div>
+          <div
+            key="5"
           >
-            0331180321
-          </p>
-          <p
-            className="results-single-number"
-            key="0888615002"
+            6
+            <p
+              className="results-single-number"
+            >
+              0905144531
+            </p>
+          </div>
+          <div
+            key="6"
           >
-            0888615002
-          </p>
-          <p
-            className="results-single-number"
-            key="0623771735"
+            7
+            <p
+              className="results-single-number"
+            >
+              0229578931
+            </p>
+          </div>
+          <div
+            key="7"
           >
-            0623771735
-          </p>
-          <p
-            className="results-single-number"
-            key="0715022566"
+            8
+            <p
+              className="results-single-number"
+            >
+              0587955594
+            </p>
+          </div>
+          <div
+            key="8"
           >
-            0715022566
-          </p>
-          <p
-            className="results-single-number"
-            key="0985084557"
+            9
+            <p
+              className="results-single-number"
+            >
+              0169540713
+            </p>
+          </div>
+          <div
+            key="9"
           >
-            0985084557
-          </p>
+            10
+            <p
+              className="results-single-number"
+            >
+              0648681800
+            </p>
+          </div>
         </div>
         <div
           className="results-actions"
         >
           <div
+            className="results-actions__redirect"
             onClick={[Function]}
           >
             <img
@@ -175,6 +216,7 @@ exports[`should take screenshot successfully 1`] = `
             </p>
           </div>
           <div
+            className="results-actions__upload"
             onClick={[Function]}
           >
             <img

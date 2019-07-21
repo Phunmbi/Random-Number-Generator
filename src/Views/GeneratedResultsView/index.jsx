@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import { generateNumbers, saveToFile, sortAscending, sortDescending } from '../../Helpers/GeneratorLogic';
+import { generateNumbers } from '../../Helpers/GeneratorLogic';
+import { saveToFile } from "../../Helpers/saveToFile";
+import { sortAscending } from "../../Helpers/sortAscending";
+import { sortDescending } from "../../Helpers/sortDescending";
 import Home from './Images/Home.svg';
 import Upload from './Images/Upload.svg';
 import Ascending from './Images/Ascending.svg';
@@ -17,9 +20,12 @@ class GeneratedResults extends Component {
     })
   }
 
-  SingleGeneratedNumber = (int) => {
+  SingleGeneratedNumber = (int, index) => {
     return (
-      <p key={int} className="results-single-number">{int}</p>
+      <div key={index}>
+        {index + 1}
+        <p className="results-single-number">{int}</p>
+      </div>
     )
   };
 
@@ -60,15 +66,15 @@ class GeneratedResults extends Component {
         </div>
         {this.renderSorting()}
         <div className="results-wrapper">
-          {this.state.numbers.map((each) => {
-            return this.SingleGeneratedNumber(each);})}
+          {this.state.numbers.map((each, index) => {
+            return this.SingleGeneratedNumber(each, index);})}
         </div>
         <div className="results-actions">
-          <div onClick={() => this.props.history.push('/')} >
+          <div className="results-actions__redirect" onClick={() => this.props.history.push('/')} >
             <img src={Home} alt="Home"/>
             <p>Home</p>
           </div>
-          <div onClick={() => saveToFile(this.state.numbers)}>
+          <div className="results-actions__upload" onClick={() => saveToFile(this.state.numbers)}>
             <img src={Upload} alt="Save Numbers" />
             <p>Save Numbers</p>
           </div>

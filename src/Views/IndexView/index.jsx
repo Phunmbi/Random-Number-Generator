@@ -3,7 +3,7 @@ import './IndexView.scss';
 
 class IndexView extends Component {
   state = {
-    amountToGenerate: 0
+    amountToGenerate: 1000
   };
 
   handleChange = (e) => {
